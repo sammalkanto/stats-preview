@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+// Primary
+$veryDarkBlue: hsl(233, 47%, 7%);
+$darkDesaturatedBlue: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$slightlyTransparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+$slightlyTransparentWhiteSecondary: hsla(0, 0%, 100%, 0.6);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $white;
+    font-family: 'Inter';
+}

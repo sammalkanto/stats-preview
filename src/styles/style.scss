@@ -1,0 +1,88 @@
+@import 'config';
+
+body {
+    background: $veryDarkBlue;
+    height: 100vh;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $veryDarkBlue;
+    height: 100vh;
+}
+
+.card {
+    background: $darkDesaturatedBlue;
+    border-radius: 8px;
+    display: flex;
+    width: 1110px;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+
+    .content {
+        padding: 64px 128px 64px 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .title {
+                .highlight {
+                    color: $softViolet;
+                }
+            }
+    
+            .description {
+                color: $slightlyTransparentWhiteSecondary;
+                line-height: 1.6rem;
+            }
+        }
+        
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .value {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+
+                .key {
+                    color: $slightlyTransparentWhiteSecondary;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    .media {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        height: 450px;
+        position: relative;
+
+        .filter {
+            top: 0;
+            opacity: 60%;
+            position: absolute;
+            background: darken($softViolet, 30%);
+            width: 100%;
+        }
+    }
+}
+
+@import 'media';
